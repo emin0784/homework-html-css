@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <form action="" method="">
+
+        <h2>Shopping Form</h2>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <br />
+            <label for="firstName">First Name:</label> <br />
+            <input type="text" name="firstName" id="firstName" required maxlength="20" placeholder="ex. John" />
+            <br />
+            <label for="lastName">Last Name:</label> <br />
+            <input type="text" name="lastName" id="lastName" required maxlength="20" placeholder="ex. Doe" />
+            <br />
+            <label for="email">Email:</label> <br />
+            <input type="email" name="email" id="email" required maxlength="20" placeholder="ex. yourmail@gmail.com" />
+            <br />
+            <label for="shippingAddress">Shipping Address:</label> <br />
+            <textarea name="shippingAddress" id="shippingAddress" cols="40" rows="8" required
+                placeholder="Your home address..."></textarea>
+
+            <br />
+            <label for="billingAdress">Billing Address</label> <br />
+            <textarea name="billingAdress" id="billingAdress" cols="40" rows="8" required
+                placeholder="Your billing address..."></textarea>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+            <legend>Order Info</legend>
+            <label for="deliveryMethod">Delivery Method:</label><br />
+            <select name="deliveryMethod" id="deliveryMethod" required>
+                <option value="standardDelivery">Standard Delivery (4-7 business days)</option>
+                <option value="expressDelivery">Express Delivery (2-3 business days)</option>
+
+
+            </select>
+
+            <br />
+            <br />
+
+            <label for="giftWrapping">Gift wrapping</label>
+            <input type="checkbox" name="giftWrapping" id="giftWrapping" />
+
+            <br />
+            <br />
+            <label for="giftMessage">Gift Message:</label> <br />
+            <textarea name="giftMessage" id="giftMessage" cols="40" rows="8"
+                placeholder="Your Gift message..."></textarea>
+
+
+            <br />
+            <br />
+            <label for="paymentMethod">Payment Method:</label> <br />
+            <select name="paymentMethod" id="paymentMethod" required>
+                <option value="creditCard">Credit Card</option>
+                <option value="degitCard">Debit Card</option>
+                <option value="payPal">PayPal</option>
+            </select>
+
+            <br />
+            <br />
+
+            <label for="cardNumber">Card Number:</label> <br />
+            <input type="number" name="cardNumber" id="cardNumber" required placeholder="1234 5678 1234 5678"
+                maxlength="16" minlength="16" />
+            <br />
+            <br />
+            <label for="expirationDate">Expiration Date</label>
+            <input type="date" name="expirationDate" id="expirationDate" required />
+
+            <br />
+            <br />
+            <label for="cvc">CVC</label><br />
+            <input type="number" name="cvc" id="cvc" required maxlength="3" minlength="3" placeholder="123">
+            <br />
+            <br />
+
+            <label for="savedPaymentMethod">Save Payment Method For Future Purchases</label>
+            <input type="checkbox" name="savedPaymentMethod" id="savedPaymentMethod" />
+
+            <br />
+            <br />
+
+            <p>Preferred Contact Method for Order Updates:</p>
+            <input type="radio" name="contactMethod" id="email" />
+            <label for="email">Email</label> <br />
+            <input type="radio" name="contactMethod" id="phone" />
+            <label for="phone">Phone</label> <br />
+            <input type="radio" name="contactMethod" id="both" />
+            <label for="both">Both Email and Phone</label>
+
+
+            <br />
+            <br />
+            <label for="orderNotes">Order Notes:</label> <br />
+            <textarea name="Order" id="orderNotes" cols="40" rows="8" placeholder="Your Order Notes..."></textarea>
+
+            <br />
+            <br />
+        </fieldset>
+        <button type="reset">Cancel</button>
+        <button type="submit">Submit Order</button>
+
+    </form>
+
+</body>
+
+</html>
